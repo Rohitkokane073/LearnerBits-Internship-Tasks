@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    
+}
+form{
+    width: 100%;
+}
+header{
+    background-color: #fff;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 160px;
+}
+.logo img{
+    width: 100%;
+}
+
+
+.search_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    min-width: 300px;
+    width: 450px;
+    height: 35px;
+    margin: 0 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    padding: 0 10px;
+    box-shadow: -5px -5px 5px rgba(0,0,0,0.1), 5px 5px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.search_container input{
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    
+}
+.recent_search{
+    position: absolute;
+    background: #fff;
+    box-shadow: -5px 0px 5px rgba(0,0,0,0.1), 5px 5px 5px rgba(0,0,0,0.1);
+    height: 400px;
+    width: 100%;
+    top: 35px;
+    margin-left: -15px;
+    border-top: 1px solid #ccc;
+    display: none;
+    padding: 15px;
+
+}
+.search_container:focus-within .recent_search{
+    display: block;
+}
+.recent_list{
+    display: flex;
+    padding: 5px 0;
+}
+.recent_list i{
+    color: #7a7a7a;
+    font-size: 14px;
+}
+.recent_list p{
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+/****** Login Btn *****/
+.loginBtn_container{
+    background-color: #fff;
+    padding: 7px 30px;
+    border-radius: 2px;
+    font-size: 18px;
+    margin: 0 10px;
+    position: relative;
+}
+.loginBtn_container a{
+    color: #1c41d6;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+.login_menu{
+    position: absolute;
+    top: 35px;
+    height: 320px;
+    width: 230px;
+    /* max-width: 250px; */
+    background-color: transparent;
+    margin-left: -40px;
+    transform: translateX(-25%);
+    display: none;
+    padding-top: 15px;
+}
+.login_menu::before{
+    position: absolute;
+    content: "";
+    margin-left: 110px;
+    top: 0px;
+    border-top: 0px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid blue;
+}
+.loginBtn_container:hover .login_menu{
+    display: block;
+}
+
+.login_menu_list{
+    height: 100%;
+    max-height: 100%;
+    background-color: #fff;
+    box-shadow: -5px 0px 5px rgba(0,0,0,0.1), 5px 5px 5px rgba(0,0,0,0.1);
+    padding: 5px 20px;
+    font-size: 15px;
+}
+.login_menu_top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.login_menu_top a:hover{
+    text-decoration: underline;
+}
+.menu_nav_link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+.menu_nav_link a{
+    padding-top: 10px;
+    font-size: 14px;
+    display: flex;
+}
+.menu_nav_link p{
+    padding-left: 10px;
+    color: #474545;
+    font-weight: 500;
+}
+.menu_nav_icon{
+    width: 15px;
+}
+
+
+/********** Become a seller *******/
+.nav-link{
+    color: black;
+    padding: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 550;
+    margin: 0 5px;
+}
+
+/******** More Options ********/
+.more-link{
+    font-weight: 550;
+    padding: 0 15px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 10px;
+    position: relative;
+}
+.more_menu{
+    position: absolute;
+    height: 220px;
+    width: 200px;
+    content: "";
+    background-color: transparent;
+    transform: translateX(-35%);
+    padding-top: 10px;
+    display: none;
+}
+.more-link:hover .more_menu{
+    display: block;
+}
+.more_menu::before{
+    position: absolute;
+    content: "";
+    margin-left: 90px;
+    top: 0px;
+    border-top: 0px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid blue;
+}
+.more_menu_list{
+    box-shadow: -5px 0px 5px rgba(0,0,0,0.1), 5px 5px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+    height: 100%;
+}
+.icon-more{
+    font-size: 10px;
+    transition: transform 0.5s;
+}
+.more-link:hover .icon-more{
+    transform: rotate(-180deg);
+}
+.cart_link{
+    display: flex;
+    font-size: 18px;
+    font-weight: 550;
+    margin: 0 10px;
+}
+.cart_link p{
+    padding: 0 5px;
+}
